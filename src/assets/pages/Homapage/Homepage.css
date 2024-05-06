@@ -1,0 +1,55 @@
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 200px;
+}
+
+.header-container__block-main {
+    margin-bottom: 200px;
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .highlight {
+        font-size: 55px;
+        font-weight: 300;
+        font-family: Gabriola, serif;
+        color: #075985;
+    }
+
+    p {
+        font-size: 18px;
+        opacity: 0.5;
+    }
+}
+
+.block-button-in-catalog {
+    text-align: center;
+}
+
+.block-button-in-catalog button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 80%;
+    padding: 50px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-button-in-catalog button a {
+    text-decoration: none;
+    color: white;
+}
+
+.block-button-in-catalog button::after {
+    content: "\2192";
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    transform: rotate(5deg);
+    font-size: 24px;
+}
